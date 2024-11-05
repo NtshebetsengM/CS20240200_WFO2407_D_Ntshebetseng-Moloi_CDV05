@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NKYM</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<section>
+			<div class="navBar">
+				<div><a href="#hero">home</a></div>
+
+				<div><a href="#about-me">about me</a></div>
+
+				<div><a href="#projects">my projects</a></div>
+
+				<div><a href="#contact">contact me</a></div>
+			</div>
+		</section>
+		<!--grid that holds pic of me, name & short intro-->
+		<main class="hero" id="hero">
+			<div class="grid-container">
+				<div class="grid-item-1">
+					<h1>Ntshebetseng</h1>
+				</div>
+				<div class="grid-item-2">
+					<p>short intro</p>
+				</div>
+				<div class="grid-item-3">
+					<img src="./images/nana.jpg" alt="" />
+				</div>
+			</div>
+		</main>
+		<!--about me section-->
+		<section id="about-me">
+			<div>
+				<h2>about me</h2>
+				<p>my history and what not. blah blah blah</p>
+			</div>
+		</section>
+		<!--projects section-->
+		<section id="projects">
+			<!--project index-->
+			<div>
+				<h2>project list links</h2>
+				<ul>
+					<li>
+						<h3>project 1</h3>
+						<p>short desc</p>
+					</li>
+					<li>
+						<h3>project 2</h3>
+						<p>short desc</p>
+					</li>
+					<li>
+						<h3>project 3</h3>
+						<p>short desc</p>
+					</li>
+				</ul>
+			</div>
+			<!--project 1-->
+			<div class="project-card">
+				<div class="projectInfo">
+					<h2>project name</h2>
+					<h3>languages/technologies used</h3>
+					<p>description....</p>
+					<h4><a href="#">githublink</a></h4>
+				</div>
+				<div project-img>
+					<img src="" alt="" />
+				</div>
+			</div>
+			<!--project 2-->
+			<div class="project-card">
+				<div project-Info>
+					<h2>project name</h2>
+					<h3>languages/technologies used</h3>
+					<p>description....</p>
+					<h4><a href="#">githublink</a></h4>
+				</div>
+				<div project-img>
+					<img src="" alt="" />
+				</div>
+			</div>
+			<!--project 3-->
+			<div class="project-card">
+				<div project-Info>
+					<h2>project name</h2>
+					<h3>languages/technologies used</h3>
+					<p>description....</p>
+					<h4><a href="#">githublink</a></h4>
+				</div>
+				<div project-img>
+					<img src="" alt="" />
+				</div>
+			</div>
+		</section>
+		<!--contact information-->
+		<section>
+			<h2 id="contact">wanna get in touch?</h2>
+			<!--contact info form-->
+			<div>
+				<form action="email">
+					<div>
+						<label for="fullname">fullname</label>
+						<input type="text" fullname />
+					</div>
+
+					<div>
+						<label for="email">email</label>
+						<input type="email" email />
+					</div>
+					<div>
+						<label for="phone">phone</label>
+						<input type="text" phone />
+					</div>
+					<button type="submit">submit</button>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<!--social media icon w/ links-->
+			<div>
+				<div>linkdin</div>
+				<div>github</div>
+				<div>email</div>
+				<div>phone number</div>
+			</div>
+			<!--copywright-->
+			<div>
+				<div>copywright stuff</div>
+			</div>
+		</footer>
+	</body>
+</html>
