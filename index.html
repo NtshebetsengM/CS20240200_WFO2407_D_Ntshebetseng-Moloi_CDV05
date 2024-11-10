@@ -12,6 +12,7 @@
 			rel="stylesheet"
 		/>
 		<script src="index.js" defer></script>
+		<script src="firebase.js" type="module" defer></script>
 	</head>
 	<body>
 		<header>
@@ -38,7 +39,11 @@
 				<div class="grid-container">
 					<div class="grid-item-1">
 						<h1>Ntshebetseng Moloi</h1>
-						<p>short intro</p>
+						<p>
+							I’m a 24-year-old software developer based in Johannesburg, with a
+							strong passion for creating innovative solutions through clean,
+							efficient code.
+						</p>
 					</div>
 					<div class="grid-item-2"></div>
 					<div class="grid-item-3">
@@ -51,11 +56,7 @@
 				<div class="container">
 					<h2>About me</h2>
 					<h3>Hi, I’m Ntshebetseng, but you can call me Nana.</h3>
-					<p>
-						I’m a 24-year-old software developer based in Johannesburg, with a
-						strong passion for creating innovative solutions through clean,
-						efficient code.
-					</p>
+
 					<p>
 						Currently, I’m studying software development at CodeSpace, where I
 						specialize in building dynamic, user-friendly web applications using
@@ -168,21 +169,18 @@
 				<h2 id="contact">Want to get in touch?</h2>
 				<!--contact info form-->
 				<div>
-					<form action="email" method="post">
-						<div>
-							<label for="fullname">Full Name</label>
-							<input type="text" id="fullname" name="fullname" required />
-						</div>
+					<form id="contact-form">
+						<label for="firstname">First Name</label>
+						<input type="text" id="firstname" name="firstname" required />
 
-						<div>
-							<label for="email">Email</label>
-							<input type="email" id="email" name="email" />
-						</div>
-						<div>
-							<label for="phone">Phone number</label>
-							<input type="text" id="phone" name="phone" />
-						</div>
-						<input type="submit" value="submit" id="formBtn" />
+						<label for="surname">Surname</label>
+						<input type="text" id="surname" name="surname" required />
+
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required />
+
+						<div id="confirmMessage"></div>
+						<button type="submit" id="formBtn">Submit</button>
 					</form>
 				</div>
 			</section>
