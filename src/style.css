@@ -189,7 +189,7 @@ color: #562c14;
 /* Modal Content */
 .modal-content {
 	background-color: var(--background);
-	padding: 20px;
+	padding: 50px;
 	max-width: 70vw;
 	max-height: 90vh;
 	margin: 20px;
@@ -201,15 +201,19 @@ color: #562c14;
 }
 
 /* Project Info */
-.projectInfo h2,
-.projectInfo h3,
-.projectInfo p {
+.projectInfo h2, h3, p , h4{
 	margin: 10px 0;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.projectInfo li{
+	list-style: circle;
 }
 
 .project-img img {
-	width: 60%;
-	height: 60%;
+	width: 30%;
+	height: 30%;
 	display: block;
 	margin: 0 auto;
 	border: 2px solid #562c14;
@@ -231,10 +235,14 @@ color: #562c14;
 	transition: all 100ms linear;
 	padding: 5px;
 	border-radius: 2px;
+	color: #562c14;
+	border-bottom: 2px solid var(--background);
+	transition:all 200ms ease;
+	
 	
 }
 .githubLinks:hover{
-	border-bottom: 2px solid var(--accent);	
+	border-bottom: 3px solid var(--accent);	
 }
 
 /* Initially Hide All Project Content in Modal */
