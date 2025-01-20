@@ -11,7 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="index.js" defer></script>
+		<script src="app.js" type="module" defer></script>
 		<script src="firebase.js" type="module" defer></script>
 	</head>
 	<body>
@@ -60,7 +60,7 @@
 					<p>
 						Currently, I’m studying software development at CodeSpace, where I
 						specialize in building dynamic, user-friendly web applications using
-						JavaScript and following the Airbnb style guide. What started as a
+						JavaScript, Typescript and React. What started as a
 						creative outlet has grown into a dedicated career in software
 						development, and I’m driven by a desire to continuously improve
 						digital experiences.
@@ -75,31 +75,37 @@
 			</section>
 
 			<!-- Projects Section -->
-			<section id="projects">
+			<section class="projects">
 				<!-- Project List Links -->
 				<div>
 					<h2>View My work</h2>
 					<ul class="projectIndex">
 						<li>
-							<a href="#" onclick="openModal('project1', event)">Agile Board</a>
+							<a href="#" id="project1" >Agile Board</a>
 						</li>
 						<li>
-							<a href="#" onclick="openModal('project2', event)"
+							<a href="#" id="project2" 
 								>Shopping List</a
 							>
 						</li>
+						<li>
+							<a href="#" id="project3"
+								>ListenUp</a
+							>
+						</li>
+						
 					</ul>
 				</div>
 			</section>
 
 			<!-- The Modal -->
-			<div id="modal" class="modal" onclick="closeModal(event)">
-				<div class="modal-content" onclick="event.stopPropagation()">
+			<div id="modal" class="modal">
+				<div class="modal-content">
 					<!-- Stops click event from closing modal -->
-					<span class="close-btn" onclick="closeModal()">×</span>
+					<span id="close-btn">×</span>
 
 					<!-- Project 1 Modal Content -->
-					<div id="project1" class="modal-project">
+					<div id="project1Modal" class="hidden">
 						<div class="projectInfo">
 							<h2>Agile Board - Kanban Task Management App</h2>
 							<h3>HTML | CSS | JAVASCRIPT</h3>
@@ -133,7 +139,7 @@
 					</div>
 
 					<!-- Project 2 Modal Content -->
-					<div id="project2" class="modal-project">
+					<div id="project2Modal" class="hidden">
 						<div class="projectInfo">
 							<h2>Shopping List App</h2>
 							<h3>HTML | CSS | JAVASCRIPT | FIREBASE</h3>
@@ -161,8 +167,33 @@
 							<img src="./images/shopping-list.png" alt="Project 2 Image" />
 						</div>
 					</div>
+
+					<!-- Project 3 Modal Content -->
+					<div id="project3Modal" class="hidden">
+						<div class="projectInfo">
+							<h2>ListenUp</h2>
+							<h3>HTML | CSS | JAVASCRIPT | Typescript | React</h3>
+							<p>
+								podcast app....
+							</p>
+							<h4>
+								<a
+									href="https://github.com/NtshebetsengM/CS20240200_WFO2407_D_NtshebetsengMoloi_DJS11"
+									target="_blank"
+									class="githubLinks"
+									>GitHub Link</a
+								>
+							</h4>
+						</div>
+						<div class="project-img">
+							<img src="./images/shopping-list.png" alt="Project 2 Image" />
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+			
 
 			<!--contact information-->
 			<section>
